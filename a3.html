@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Let find the larfest number</p>
+    <p id="answer"></p>
+    <script>
+        function maxfun() {
+            var max = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("answer").innerHTML = maxfun(7, 77, 777, 7777, 66766);
+    </script>
+</body>
+</html>
